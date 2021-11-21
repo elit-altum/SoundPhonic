@@ -1,0 +1,44 @@
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+  background-color: $background-colour;
+}
+
+button{
+  cursor: pointer;
+}
+
+button:disabled{
+  cursor: default;
+}
+
+.is-active{
+  font-weight: bold;
+}
+
+@mixin imgButton {
+  background: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+
+  &:focus{
+    outline: none;
+  }
+}
+
+@mixin thumbIcon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+}
+
+#stats-graph{
+  left: unset !important;
+}

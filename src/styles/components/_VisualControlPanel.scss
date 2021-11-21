@@ -1,0 +1,125 @@
+#VisualControlPanel{
+  margin: 20px;
+  position: relative;
+  top: 70px;
+}
+
+.viscontrol--menubuttons{
+  @include imgButton;
+  &.settings{
+    background-image: url('../img/icons/oscil_controlpanel_settings_bg.svg');
+  }
+  &.select{
+    background-image: url('../img/icons/oscil_controlpanel_select_bg.svg');
+  }
+}
+
+.viscontrol--menubuttons.exterior{
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 0 10px;
+}
+
+.viscontrol--menubuttons.interior{
+  &.select{
+    float: left;
+    height: 25px;
+    width: 25px;
+    background-image: url('../img/icons/oscil_controlpanel_select.svg');
+  }
+  &.settings{
+    float: left;
+    height: 25px;
+    width: 25px;
+    background-image: url('../img/icons/oscil_controlpanel_settings.svg');
+  }
+  &.close{
+    @include imgButton;
+    background-image: url('../img/icons/oscil_controlpanel_close.svg');
+    float: right;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.viscontrol--menu{
+  background: $background-colour;
+  color: $main-colour;
+  padding: 20px;
+  padding-bottom: 40px;
+  width: 250px
+}
+
+.viscontrol--menubuttoncontainer{
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+.viscontrol--vistitle{
+  margin-top: 0px;
+}
+
+.viscontrol--typeicon{
+  @include thumbIcon;
+  height: 25px;
+  width: 25px;
+  margin-right: 20px;
+  &.calibrate{
+    background-image: url('../img/icons/oscil_type_calibrate.svg');
+  }
+  &.shape{
+    background-image: url('../img/icons/oscil_type_shape.svg');
+  }
+  &.image{
+    background-image: url('../img/icons/oscil_type_image.svg');
+  }
+  &.video{
+    background-image: url('../img/icons/oscil_type_video.svg');
+  }
+  &.three{
+    background-image: url('../img/icons/oscil_type_three.svg');
+  }
+}
+
+.viscontrol--renderericon{
+  @include thumbIcon;
+  height: 25px;
+  width: 25px;
+
+  &.html{
+    background-image: url('../img/icons/oscil_renderer_html.svg');
+  }
+  &.p5{
+    background-image: url('../img/icons/oscil_renderer_p5.svg');
+  }
+  &.three{
+    background-image: url('../img/icons/oscil_renderer_three.svg');
+  }
+}
+
+.viscontrol--settingsheader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.viscontrol--settingsicon{
+  @include thumbIcon;
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  display: inline-block;
+
+  &.audio{
+    background-image: url('../img/icons/oscil_controlpanel_audio.svg');
+  }
+  &.visual{
+    background-image: url('../img/icons/oscil_controlpanel_visual.svg');
+  }
+}
+
+.viscontrol--settingstitle{
+  display: inline-block;
+}

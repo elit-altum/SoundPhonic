@@ -1,0 +1,73 @@
+.thumbnail--grid{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.thumbnail--item{
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px;
+  text-decoration: none;
+}
+.thumbnail--background{
+  // Align content at bottom of thumb:
+  align-items: flex-end;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.thumbnail--info{
+  background: $background-colour;
+  width: 100%;
+  margin: 10px;
+  color: $main-colour;
+  font-family: $type-body;
+  text-align: left;
+  padding: 10px;
+}
+.thumbnail--title{
+  font-weight: bold;
+}
+
+.thumbnail--type{
+  @include thumbIcon;
+  height: 25px;
+  width: 25px;
+  margin-right: 20px;
+  &.calibrate{
+    background-image: url('../img/icons/oscil_type_calibrate.svg');
+  }
+  &.shape{
+    background-image: url('../img/icons/oscil_type_shape.svg');
+  }
+  &.image{
+    background-image: url('../img/icons/oscil_type_image.svg');
+  }
+  &.video{
+    background-image: url('../img/icons/oscil_type_video.svg');
+  }
+  &.three{
+    background-image: url('../img/icons/oscil_type_three.svg');
+  }
+}
+.thumbnail--renderer{
+  @include thumbIcon;
+  height: 25px;
+  width: 25px;
+  margin-right: 20px;
+  &.html{
+    background-image: url('../img/icons/oscil_renderer_html.svg');
+  }
+  &.p5{
+    background-image: url('../img/icons/oscil_renderer_p5.svg');
+  }
+  &.three{
+    background-image: url('../img/icons/oscil_renderer_three.svg');
+  }
+}

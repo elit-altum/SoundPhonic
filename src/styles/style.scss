@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono|Roboto');
+
+
+@import "./base/settings";
+@import "./base/base";
+// @import "./components/styleDump";
+@import "./components/HomePage";
+@import "./components/VisualPage";
+@import "./components/Header";
+@import "./components/VisualControlPanel";
+@import "./components/VisualDatGui";
+@import "./components/VisualSelection";
+@import "./parts/loadingScreen";
