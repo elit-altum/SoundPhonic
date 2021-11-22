@@ -6,4 +6,5 @@ Audio Waveform Visualizer built for Computer Graphics Project
 <ul>Manan Sharma - 2K19/CO/212</ul>
 <ul>Kushagra Gupta - 2K19/CO/203</ul>
 <ul>Jatin Kansal - 2K19/CO/174</ul>
+<ul>Krishanu Kashyap - 2K19/CO/193</ul>
 </li>
